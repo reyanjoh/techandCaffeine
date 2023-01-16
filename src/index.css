@@ -1,3 +1,16 @@
+:root{
+  --light-text: #DFE5EB;
+
+  --border-color: #E2E2E2;
+
+  --small: .7rem;
+  --medium: 1rem;
+  --large: 1.5rem;
+  --xlarge: 2rem;
+  --xxlarge: 3rem;
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +24,221 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a{
+  text-decoration: none;
+  color: var(--light-text);
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-center{
+  display: flex;
+  align-items: center;
+}
+
+header{
+  background-color: #124375;
+  padding: 0 6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5rem;
+  z-index: 5;
+} 
+
+.header-contact-info{
+  padding: 1.5rem 0;
+  justify-content: space-between;
+}
+
+.header-contact-info-address{
+  color: var(--light-text);
+}
+
+
+.svg-inline--fa{
+  color: #4da9fa;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav{
+  background-color: #1B548A;
+  align-items: center;
+  /* margin: 0 6rem; */
+  justify-content: space-between;
+  
+}
+
+.logo-div{
+  background-color: aliceblue;
+  width: 15rem;
+  height: 4.5rem;
+  clip-path: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+  
+}
+
+.store-name{
+  font-weight: 700;
+  color: #5D4225;
+}
+
+.logo{
+  width: 4rem;
+}
+
+.nav-div{
+  padding-right: 3rem;
+}
+
+nav > .nav-div> a{
+  margin: 0 1rem;
+}
+
+
+.selected{
+  color: #B37F4C;
+}
+
+.test{
+  width: 100%;
+  height: 200vh;
+}
+
+
+.Home{
+  
+  background-color: #124375;
+}
+
+.hero{
+  padding: 0 6rem;
+  height: 75vh;
+  position: relative;
+}
+
+.man-img{
+  position: absolute;
+  z-index: 1;
+  right: 7rem;
+  top: -2rem;
+  height: 40rem;
+}
+
+.welcome-msg{
+  width: 70%;
+}
+
+.looking-for{
+  font-size: var(--large);
+  color:var(--light-text);
+
+}
+
+h1{
+  font-size: var(--xlarge);
+  color:var(--light-text);
+
+}
+
+h2{
+  font-size: var(--medium);
+  font-weight: 500;
+  color:var(--light-text);
+  margin: 0 0 3rem ;
+}
+
+.call-us-now{
+  border: 1px solid #B37F4C;
+  padding: 1rem 3rem;
+  color: #B37F4C;
+}
+
+.promises{
+  /* display: flex; */
+
+  padding: 2rem 6rem;
+  background-color: #5D4225;
+}
+
+
+.risk-free{
+  display: flex;
+  align-items: center;
+}
+
+.fa-square-check{
+  /* background-color: #5D4225; */
+  font-size: 3rem;
+  margin: 0;
+  color: var(--light-text);
+}
+
+.no-risk{
+  border-right: 2px solid #B37F4C;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--light-text);
+  /* background-color: #4da9fa; */
+}
+
+.money-back{
+  /* background-color: #124375; */
+  width: 9rem;
+  line-height: .7rem;
+  color: var(--light-text);
+}
+
+
+
+.Services{
+  padding: 2rem 6rem;
+}
+
+.section-headers{
+  text-transform: uppercase;
+  font-size: var(--large);
+  font-weight: 500;
+}
+
+.section-sub-headers{
+  font-size: var(--medium);
+  /* font-weight: 500; */
+  margin: 1rem 0 2rem;
+}
+
+.services-section{
+  display: flex;
+  column-gap: 2rem;
+}
+
+.ServiceCard{
+  background-color: 'white',
+}
+
+.ServiceCard:hover{
+  background-color: #124375;
+}
+
+.ServiceCard:hover .chage-color-on-hover{
+  color: var(--light-text);
+}
+
+.black{
+  color: black;
+}
+.ServiceCard:hover .ServiceCard-img{
+  transform: scale(1.05); 
+}
+
+
+
+
+
