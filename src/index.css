@@ -219,6 +219,29 @@ h2{
   color: var(--light-text);
 }
 
+.footer-card{
+  flex: 1;
+}
+
+.footer-header{
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.footer-contact{
+  margin: 0 0 2rem;
+}
+
+.footer-newsletter-submit{
+  background-color: #082746;
+  color: var(--light-text);
+  transition: .1s;
+}
+
+.footer-newsletter-submit:hover{
+  background-color: #124375;
+  color: var(--light-text);
+}
 
 
 

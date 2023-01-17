@@ -1,16 +1,95 @@
 import React from 'react'
+import Logo from '../header/components/Logo'
 
 const Footer = () => {
   return (
     <div style={{backgroundColor:'#1D5A90'}}>
-        <div className='flex-justify-center' style={{padding: '3rem 0'}}>
+        <div className='flex-justify-center' style={{padding: '2rem 0'}}>
             <i className="footer-icon fa-brands fa-facebook"></i>
             <i className="footer-icon fa-solid fa-map-location-dot"></i>
         </div>
-        <div>
+        <div style={{
+            display:'flex',
+            columnGap:'1rem',
+            padding: '0 6rem 2rem',
+            color: 'var(--light-text)',
+            // width:'100vw',
+            // backgroundColor: 'violet'
+        }}>
+            <div  className='footer-card flex-column'>
+                <span className='footer-header'>
+                    <Logo />
+                </span>
+                    
+                <span>
+                    OUR NEWSLETTER
+                </span>
+                <form action='https://getform.io/f/fe695567-3adb-4924-8d2b-39a784538501' method="POST" style={{
+                    
+                }}>
+                    <input required placeholder='Your email address' name='news-letter-subscription-email' type={'email'} style={{
+                        width: '90%',
+                        height: '2rem',
+                        margin: '.5rem 0',
+                        padding: '0 0 0 1.5rem'
+                    }}/>
+                    <input className='footer-newsletter-submit' type={'submit'} value={'Subscribe'} style={{
+                        width: '50%',
+                        height: '2rem',
+                        border: 'none',
+                        cursor: 'pointer'
+                    }}/>
+                </form>
+            </div>
+            <div  className='footer-card flex-column'> 
+                {/* <span className='footer-header'>
+                    ADDRESS
+                </span> */}
+            </div>
+            <div  className='footer-card flex-column'> 
+                <span className='footer-header'>
+                    ADDRESS
+                </span>
+                <div className='footer-contact header-contact-info-location flex-align-center'>
+                    <i className="fa-solid fa-location-dot header-icon"></i>
+                    <span>Magsaysat Claro corner Malaybalay City</span>
+                </div>
+                <div className='footer-contact header-contact-info-location flex-align-center'>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href='tel:+(63)9761731273'> +(63)9761731273</a>
+                </div>
+                
+            </div>
+            <div  className='footer-card flex-column'> 
+                <span className='footer-header'>
+                    WORKING HOURS 
+                </span>
+                <span>
+                Monday .............................. 9:00 - 19:00 
+                </span>
+                <span>
+                Tuesday .............................. 9:00 - 19:00
+                </span>
+                <span>
+                Wednesday ....................... 9:00 - 19:00
+                </span>
+                <span>
+                Thursday ............................ 9:00 - 19:00
+                </span>
+                <span>
+                Friday .................................. 9:00 - 19:00
+                </span>
+                <span>
+                Saturday ............................ 9:00 - 19:00
+                </span>
+                <span>
+                Sunday ............................... Closed
+                </span>
+            </div>
+
         </div>
         <div style={{
-            padding: '2rem 5rem',
+            padding: '2rem 6rem',
             display: 'flex',
             justifyContent:'space-between',
             color:'var(--light-text)',

@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from './components/Logo'
 
 const Header = () => {
   return (
@@ -13,10 +14,7 @@ const Header = () => {
         </div>
 
         <nav className='flex'>
-            <div className='logo-div flex-align-center'>
-                <img className='logo' src='./assets/imgs/logo.png'/>
-                <span className='store-name'>TECH&CAFFEINE</span>
-            </div>
+            <Logo />
             <div className='nav-div'>
                 <a href='/'>Home</a>
                 <a href='#'>About Us</a>
