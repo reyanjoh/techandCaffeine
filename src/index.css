@@ -11,7 +11,9 @@
   
 }
 
+
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -42,6 +44,11 @@ a{
 .flex-align-center{
   display: flex;
   align-items: center;
+}
+
+.flex-justify-center{
+  display: flex;
+  justify-content: center;
 }
 
 header{
@@ -99,7 +106,12 @@ nav{
 }
 
 nav > .nav-div> a{
+  transition: .3s;
   margin: 0 1rem;
+}
+
+nav > .nav-div> a:hover{
+  color: #B37F4C;
 }
 
 
@@ -169,55 +181,6 @@ h2{
 }
 
 
-.risk-free{
-  display: flex;
-  align-items: center;
-}
-
-.fa-square-check{
-  /* background-color: #5D4225; */
-  font-size: 3rem;
-  margin: 0;
-  color: var(--light-text);
-}
-
-.no-risk{
-  border-right: 2px solid #B37F4C;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--light-text);
-  /* background-color: #4da9fa; */
-}
-
-.money-back{
-  /* background-color: #124375; */
-  width: 9rem;
-  line-height: .7rem;
-  color: var(--light-text);
-}
-
-
-
-.Services{
-  padding: 2rem 6rem;
-}
-
-.section-headers{
-  text-transform: uppercase;
-  font-size: var(--large);
-  font-weight: 500;
-}
-
-.section-sub-headers{
-  font-size: var(--medium);
-  /* font-weight: 500; */
-  margin: 1rem 0 2rem;
-}
-
-.services-section{
-  display: flex;
-  column-gap: 2rem;
-}
 
 .ServiceCard{
   background-color: 'white',
@@ -238,6 +201,23 @@ h2{
   transform: scale(1.05); 
 }
 
+
+.sections-headers{
+  text-transform: uppercase;
+  font-size: var(--large);
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.sections-headers-sub-text{
+  font-size: var(--medium);
+  margin: 1rem 0 3rem;
+  text-align: center;
+}
+
+.svg-inline--fa{
+  color: var(--light-text);
+}
 
 
 

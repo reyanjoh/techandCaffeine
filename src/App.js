@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Prices from "./components/prices/Prices";
-import FeaturedServices from "./components/services/FeaturedServices";
 import Services from "./components/services/Services";
 
 
@@ -17,10 +17,11 @@ function App() {
           
       </Routes>      
 
+
       
-      <FeaturedServices />
+      
       <Prices />
-      <div className="test"></div>
+      <Footer />
     </div>
   );
 }
