@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactSection from '../universalComponents/ContactSection';
 import PagesHero from '../universalComponents/PagesHero'
 import ServiceCard from '../universalComponents/ServiceCard';
 import YellowBracket from '../universalComponents/YellowBracket';
@@ -54,7 +55,7 @@ const AboutUs = () => {
             </div>
         </div>
         <div>
-            
+            <ContactSection />
         </div>
     </div>
   )

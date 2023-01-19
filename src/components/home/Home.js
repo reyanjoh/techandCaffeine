@@ -1,7 +1,7 @@
 import React from 'react'
 import HowItStarted from '../aboutUs/components/HowItStarted'
-import Prices from '../prices/Prices'
 import FeaturedServices from '../services/FeaturedServices'
+import ContactSection from '../universalComponents/ContactSection'
 import HomePageHero from './components/HomePageHero'
 
 const Home = () => {
@@ -12,8 +12,7 @@ const Home = () => {
     </div>
     <FeaturedServices />
     <HowItStarted />
-    
-    {/* <Prices /> */}
+    <ContactSection />
 
     </>
     

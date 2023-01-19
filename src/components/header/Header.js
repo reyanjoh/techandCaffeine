@@ -1,7 +1,10 @@
 import React from 'react'
 import Logo from './components/Logo'
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
+
   return (
     <header className='flex-column'>
         <div className='header-contact-info flex flex-align-center'>
@@ -16,12 +19,12 @@ const Header = () => {
         <nav className='flex'>
             <a href='/'><Logo /></a>
             <div className='nav-div'>
-                <a href='/'>Home</a>
-                <a href='/about'>About Us</a>
-                <a href='/services'>Services</a>
-                <a href='#'>Testimonials</a>
-                <a href='#'>Blog</a>
-                <a href='/contact'>Contact Us</a>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/about'>About Us</NavLink>
+                <NavLink to='/services'>Services</NavLink>
+                <NavLink to='/testimonials'>Testimonials</NavLink>
+                <NavLink to='/blog'>Blog</NavLink>
+                <NavLink to='/contact'>Contact Us</NavLink>
             </div>
         </nav>
         
