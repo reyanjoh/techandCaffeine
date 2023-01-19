@@ -1,16 +1,19 @@
 import React from 'react'
-import AboutUs from '../aboutUs/AboutUs'
+import HowItStarted from '../aboutUs/components/HowItStarted'
+import Prices from '../prices/Prices'
 import FeaturedServices from '../services/FeaturedServices'
-import Hero from './components/Hero'
+import HomePageHero from './components/HomePageHero'
 
 const Home = () => {
   return (
     <>
-    <div className='Home'>
-        <Hero /> 
+    <div className='Home' style={{backgroundColor: '#124375'}}>
+        <HomePageHero /> 
     </div>
     <FeaturedServices />
-    <AboutUs />
+    <HowItStarted />
+    
+    {/* <Prices /> */}
 
     </>
     

@@ -1,7 +1,16 @@
 :root{
+
+  --main-color: #124375;
+  --main-text-color: #073D60;
   --light-text: #DFE5EB;
+  --dark-text: #3a464e;
 
   --border-color: #E2E2E2;
+
+  --ligh-yellow-color: #FE9B1D;
+  /* --darker-yellow-color: #ffb048; */
+
+
 
   --small: .7rem;
   --medium: 1rem;
@@ -27,10 +36,24 @@ code {
     monospace;
 }
 
+.YellowBracket{
+  background-color: var(--ligh-yellow-color);
+  padding: 2rem 6rem;
+}
+
+/* universal-paddings */
+
+.sections-content-paddings{
+  padding: 2rem 4rem;
+}
+
+
 a{
   text-decoration: none;
   color: var(--light-text);
 }
+
+/* FLEX STYLINGS */
 
 .flex{
   display: flex;
@@ -42,17 +65,15 @@ a{
 }
 
 .flex-align-center{
-  display: flex;
   align-items: center;
 }
 
 .flex-justify-center{
-  display: flex;
   justify-content: center;
 }
 
 header{
-  background-color: #124375;
+  background-color: transparent;
   padding: 0 6rem;
   position: -webkit-sticky;
   position: sticky;
@@ -111,7 +132,7 @@ nav > .nav-div> a{
 }
 
 nav > .nav-div> a:hover{
-  color: #B37F4C;
+  color: var(--ligh-yellow-color);
 }
 
 
@@ -124,27 +145,25 @@ nav > .nav-div> a:hover{
   height: 200vh;
 }
 
-
-.Home{
-  
-  background-color: #124375;
-}
-
 .hero{
-  padding: 0 6rem;
-  height: 75vh;
+  padding: 5rem 6rem;
+  margin-top: -9rem;
+  height: 30rem;
+  /* height: 75vh; */
   position: relative;
+  /* background-color: #4da9fa; */
 }
 
 .man-img{
   position: absolute;
   z-index: 1;
   right: 7rem;
-  top: -2rem;
+  top: 7rem;
   height: 40rem;
 }
 
 .welcome-msg{
+  margin-top: 8rem;
   width: 70%;
 }
 
@@ -154,33 +173,15 @@ nav > .nav-div> a:hover{
 
 }
 
-h1{
-  font-size: var(--xlarge);
-  color:var(--light-text);
-
-}
-
-h2{
-  font-size: var(--medium);
-  font-weight: 500;
-  color:var(--light-text);
-  margin: 0 0 3rem ;
-}
-
 .call-us-now{
-  border: 1px solid #B37F4C;
-  padding: 1rem 3rem;
-  color: #B37F4C;
+  transition: .2s;
+  color: var(--ligh-yellow-color);
 }
 
-.promises{
-  /* display: flex; */
-
-  padding: 2rem 6rem;
-  background-color: #5D4225;
+.call-us-now:hover{
+  background-color: var(--ligh-yellow-color);
+  color: white;
 }
-
-
 
 .ServiceCard{
   background-color: 'white',
@@ -205,14 +206,30 @@ h2{
 .sections-headers{
   text-transform: uppercase;
   font-size: var(--large);
-  font-weight: 500;
+  font-weight: 700;
   margin: 1rem 0;
+}
+
+.sections-headers-blue{
+  color: var(--main-text-color);
 }
 
 .sections-headers-sub-text{
   font-size: var(--medium);
-  margin: 1rem 0 3rem;
+  margin: 1rem 0;
   text-align: center;
+}
+
+.learn-more-about{
+  padding: .5rem 2.5rem;
+  width: 5.4rem;
+  transition: .2s;
+  border: 1px solid var(--border-color);
+}
+
+.learn-more-about:hover{
+  border-color: var(--ligh-yellow-color);
+  color: var(--ligh-yellow-color);
 }
 
 .svg-inline--fa{
@@ -241,6 +258,51 @@ h2{
 .footer-newsletter-submit:hover{
   background-color: #124375;
   color: var(--light-text);
+}
+
+
+/* about classes */
+
+.side-padding{
+  padding: 0 6rem;
+}
+
+.side-top-bottom-padding{
+  padding: 3rem 6rem;
+}
+add
+/* about classes specific tags */
+
+.our-mission-content-paragraph{
+  line-height: 1.5rem;
+  color: var(--dark-text);
+}
+
+.our-mission-list{
+  position: relative;
+  list-style: none;
+  line-height: 1.8rem;
+  color: var(--dark-text);
+}
+
+.our-mission-list::before{
+  content: "🚀";
+  position: absolute;
+  left: -2.5em;
+
+}
+
+.what-we-offer{
+  column-gap: 2rem;
+}
+
+.what-we-offer-text{
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
+.what-we-offer-service{
+  column-gap: 1rem;
 }
 
 

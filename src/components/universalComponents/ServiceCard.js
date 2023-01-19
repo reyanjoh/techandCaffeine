@@ -11,7 +11,7 @@ const ServiceCard = ({title}) => {
             aspectRatio: '4 / 2',
             overflow: 'hidden'
         }}>
-            <img className='ServiceCard-img' style={{
+            <img alt='service-img' className='ServiceCard-img' style={{
                 width: '100%',
                 transition: 'transform .5s'
             }} src='./assets/imgs/services/hard-disk.jpg' />
