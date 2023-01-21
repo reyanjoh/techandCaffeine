@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
-
+        
   return (
     <header className='flex-column'>
         <div className='header-contact-info flex flex-align-center'>
@@ -22,8 +22,8 @@ const Header = () => {
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/about'>About Us</NavLink>
                 <NavLink to='/services'>Services</NavLink>
-                <NavLink to='/testimonials'>Testimonials</NavLink>
-                <NavLink to='/blog'>Blog</NavLink>
+                {/* <NavLink to='/testimonials'>Testimonials</NavLink> */}
+                {/* <NavLink to='/blog'>Blog</NavLink> */}
                 <NavLink to='/contact'>Contact Us</NavLink>
             </div>
         </nav>

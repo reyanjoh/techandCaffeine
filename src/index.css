@@ -411,8 +411,21 @@ nav > .nav-div> a:hover{
 
 .call-us-today-phone{
   color: red;
+  background-repeat: no-repeat;
 }
 
+/* .AllServices{
+
+} */
+
+.AllServices-services-section{
+  display: grid;
+  grid-template-columns: repeat(4, 23.48%);
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2%;
+  margin-top: 3rem;
+
+}
 
 
 

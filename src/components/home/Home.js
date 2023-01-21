@@ -1,6 +1,6 @@
 import React from 'react'
 import HowItStarted from '../aboutUs/components/HowItStarted'
-import FeaturedServices from '../services/FeaturedServices'
+import FeaturedServices from '../services/components/FeaturedServices'
 import ContactSection from '../universalComponents/ContactSection'
 import HomePageHero from './components/HomePageHero'
 

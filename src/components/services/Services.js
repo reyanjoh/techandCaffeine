@@ -1,5 +1,6 @@
 import React from 'react'
 import PagesHero from '../universalComponents/PagesHero'
+import AllServices from './components/AllServices';
 
 const Services = () => {
 
@@ -7,6 +8,8 @@ const Services = () => {
   return (
     <div>
       <PagesHero />
+
+      <AllServices />
     </div>
   )
 }

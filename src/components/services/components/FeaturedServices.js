@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceCard from '../universalComponents/ServiceCard'
+import ServiceCard from '../../universalComponents/ServiceCard'
 
 const FeaturedServices = () => {
   return (
