@@ -414,6 +414,20 @@ nav > .nav-div> a:hover{
   background-repeat: no-repeat;
 }
 
+.ContactForm{
+ width: 35rem;
+}
+
+
+.ContactForm-input{
+  padding: 0.8rem 1.5rem;
+  margin:  0.3rem 0;
+  border: none;
+}
+
+.man-contacts{
+  height: 40rem;
+}
 /* .AllServices{
 
 } */
@@ -424,8 +438,9 @@ nav > .nav-div> a:hover{
   grid-row-gap: 1.5rem;
   grid-column-gap: 2%;
   margin-top: 3rem;
-
 }
+
+
 
 
 

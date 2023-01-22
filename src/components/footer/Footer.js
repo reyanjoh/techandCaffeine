@@ -6,7 +6,11 @@ const Footer = () => {
     <div style={{backgroundColor:'#1D5A90'}}>
         <div className='flex flex-justify-center' style={{padding: '2rem 0'}}>
             <i className="footer-icon fa-brands fa-facebook"></i>
-            <i className="footer-icon fa-solid fa-map-location-dot"></i>
+
+            
+
+            <a href='/contact#contact-form'><i className="footer-icon fa-solid fa-map-location-dot"></i></a>
+            
         </div>
         <div style={{
             display:'flex',
