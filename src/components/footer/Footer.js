@@ -3,7 +3,7 @@ import Logo from '../header/components/Logo'
 
 const Footer = () => {
   return (
-    <div style={{backgroundColor:'#1D5A90'}}>
+    <div className='bg-color-light'>
         <div className='flex flex-justify-center' style={{padding: '2rem 0'}}>
             <i className="footer-icon fa-brands fa-facebook"></i>
 
@@ -12,15 +12,8 @@ const Footer = () => {
             <a href='/contact#contact-form'><i className="footer-icon fa-solid fa-map-location-dot"></i></a>
             
         </div>
-        <div style={{
-            display:'flex',
-            columnGap:'1rem',
-            padding: '0 6rem 2rem',
-            color: 'var(--light-text)',
-            // width:'100vw',
-            // backgroundColor: 'violet'
-        }}>
-            <div  className='footer-card flex-column'>
+        <div className='flex padding-0-6 font-color-light' style={{columnGap:'1rem', paddingBottom:'2rem'}}>
+            <div  className='footer-card flex-column font-color-light'>
                 <span className='footer-header'>
                     <a href='/'><Logo /></a>
                 </span>
@@ -28,9 +21,7 @@ const Footer = () => {
                 <span>
                     OUR NEWSLETTER
                 </span>
-                <form action='https://getform.io/f/fe695567-3adb-4924-8d2b-39a784538501' method="POST" style={{
-                    
-                }}>
+                <form action='https://getform.io/f/fe695567-3adb-4924-8d2b-39a784538501' method="POST">
                     <input required placeholder='Your email address' name='news-letter-subscription-email' type={'email'} style={{
                         width: '90%',
                         height: '2rem',
@@ -50,7 +41,7 @@ const Footer = () => {
                     ADDRESS
                 </span> */}
             </div>
-            <div  className='footer-card flex-column'> 
+            <div  className='footer-card flex-column font-color-light'> 
                 <span className='footer-header'>
                     ADDRESS
                 </span>
@@ -64,7 +55,7 @@ const Footer = () => {
                 </div>
                 
             </div>
-            <div  className='footer-card flex-column'> 
+            <div  className='footer-card flex flex-column font-color-light'> 
                 <span className='footer-header'>
                     WORKING HOURS 
                 </span>
@@ -100,8 +91,8 @@ const Footer = () => {
             backgroundColor: '#124375'
             // borderTop: '1px solid var(--light-text)'
             }}>
-            <span>© Copyright TECH&CAFFEINE 2023. All right reserved.</span>
-            <span>Developed by: Reyan John Narvaja</span>
+            <span className='font-color-light'>© Copyright TECH&CAFFEINE 2023. All right reserved.</span>
+            <span className='font-color-light'>Developed by: Reyan John Narvaja</span>
         </div>
     </div>
   )
