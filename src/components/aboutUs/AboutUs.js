@@ -51,7 +51,6 @@ const AboutUs = () => {
                 <ServiceCard title='data recovery' />
                 <ServiceCard title='data recovery' />
                 <ServiceCard title='dive cloning' />
-                <ServiceCard title='ssd upgrade' />
             </div>
         </div>
         <div>

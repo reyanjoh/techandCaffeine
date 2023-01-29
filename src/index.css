@@ -64,6 +64,7 @@ code {
 .font-color-light{color: var(--font-color-light);}
 .font-color-mid{color: var(--font-color-mid);}
 .font-color-dark{color: var(--font-color-dark);}
+.font-color-black{color: black;}
 
 
 /* FONT SIZINGS */
@@ -109,6 +110,7 @@ code {
 /* PADDINGS */
 .padding-2-2{padding: var(--space-thin)}
 .padding-0-2{padding: 0 var(--space-thin)}
+.padding-2-0{padding: var(--space-thin) 0}
 
 .padding-2-4{padding: var(--space-thin) var(--space-small);}
 .padding-0-4{padding: 0 var(--space-small);}
@@ -286,16 +288,17 @@ nav > .nav-div> a:hover{
 
 .ServiceCard{
   background-color: white;
-  border: 1px solid var(--border-color);
   transition: .3s;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
 }
 
-.ServiceCard:hover{
-  background-color: var(--bg-color-dark);
+.chage-color-on-hover{
+  transition: .2s;
 }
 
 .ServiceCard:hover .chage-color-on-hover{
-  color: var(--font-color-light);
+  color: rgb(77, 92, 102);
 }
 
 .img-frame{
@@ -306,7 +309,7 @@ nav > .nav-div> a:hover{
 .black{
   color: black;
 }
-.ServiceCard:hover .ServiceCard-img{
+.img-frame:hover .ServiceCard-img{
   transform: scale(1.05); 
 }
 
