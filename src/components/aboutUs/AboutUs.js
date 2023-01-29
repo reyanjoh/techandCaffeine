@@ -43,7 +43,7 @@ const AboutUs = () => {
 
         </div>
         <YellowBracket />
-        <div className='what-we-offer-section flex-column flex-align-center'>
+        <div className='what-we-offer-section flex flex-column flex-align-center'>
             <span className='what-we-offer-text sections-headers'>What We Offer</span>
             <span className='sections-headers-sub-text'>We've been there too, we understand the struggle and frustration of having a faulty computer, let us handle and fix your problems.</span>
 
