@@ -11,7 +11,7 @@ const AboutUs = () => {
         <PagesHero />
         <div className='flex side-top-bottom-padding'>
             <div>
-                <img src='./assets/imgs/about/image-2.jpg'/>
+                <img alt='' src='./assets/imgs/about/image-2.jpg'/>
             </div>
             <div className='sections-content-paddings'>
                 <h1 className='sections-headers sections-headers-blue'>Our Mission</h1>
