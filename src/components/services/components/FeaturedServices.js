@@ -4,6 +4,7 @@ import ServiceCard from '../../universalComponents/ServiceCard'
 const FeaturedServices = () => {
 
     const [data, setData] = useState(null)
+    const [isLoading, setLoading] = useState(true)
 
     useEffect(()=>{
       // const data = fetchData('http://localhost:3500/data')
@@ -12,8 +13,9 @@ const FeaturedServices = () => {
       const getData = async() =>{
         const res = await fetch('https://techandcaffeineheadlesscms.onrender.com/api/services')
         const data = await res.json()
-        
+
         setData(data);
+        setLoading(false);
         // console.log(data);
       }   
       getData()
@@ -28,10 +30,11 @@ const FeaturedServices = () => {
 
         <div className='grid grid-3-columns' style={{columnGap: '2rem'}}>
 
+            {isLoading && <div>Loading. . .</div>}
             {data && data.data.map((service)=>{
               console.log(service);
                 return(
-                  <ServiceCard key={service.id} imgLink={service.attributes.url} Name={service.attributes.Name} Description={service.attributes.Description}/>
+                  <ServiceCard key={service.id} imgLink={service.attributes.coverUrl} Name={service.attributes.Name} Description={service.attributes.Description}/>
                 )
             })}
 
