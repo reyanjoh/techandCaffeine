@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ServiceCard = ({title}) => {
+const ServiceCard = ({imgLink, Name, Description}) => {
   return (
     <div className='ServiceCard'>
         <a className='font-color-black' href='/services'>
@@ -8,13 +8,13 @@ const ServiceCard = ({title}) => {
                 <img alt='' className='ServiceCard-img' style={{
                     width: '100%',
                     transition: 'transform .5s'
-                }} src='./assets/imgs/services/hard-disk.jpg' />
+                }} src={imgLink} />
             </div>
             <div className='flex flex-column padding-2-0'>
 
-                <span className='chage-color-on-hover uppervase weight-600 font-medium'>{title}</span>
+                <span className='chage-color-on-hover uppervase weight-600 font-medium'>{Name}</span>
 
-                <span className='chage-color-on-hover' style={{margin: '1rem 0'}}>Maecenas lacinia neque quis lacus ullamcorper posuere. Pellentesque at dui a purus elementum scelerisque a quis ante.</span>
+                <span className='chage-color-on-hover' style={{margin: '1rem 0'}}>{Description}</span>
 
                 <a className='chage-color-on-hover black' href='/services'>Learn More. . .</a>
             </div>
