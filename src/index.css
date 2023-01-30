@@ -97,6 +97,7 @@ code {
 
 /* GRID STYLINGS */
 .grid{display: grid;}
+.grid-3-columns{grid-template-columns: auto auto auto;}
 /* FLEX STYLINGS */
 
 
@@ -303,6 +304,8 @@ nav > .nav-div> a:hover{
 
 .img-frame{
   aspect-ratio: 4 / 2;
+  width: 100%;
+  height: 11.38rem;
   overflow: hidden;
 }
 
