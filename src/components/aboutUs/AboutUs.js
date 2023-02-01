@@ -18,10 +18,10 @@ const AboutUs = () => {
       // console.log(data);
 
       const getData = async() =>{
-        const res = await fetch('https://techandcaffeineheadlesscms.onrender.com/api/services')
+        const res = await fetch('http://localhost:1337/api/home-page-featured-services/?populate=*')
         const data = await res.json()
 
-        setData(data);
+        setData(data.data[0].attributes.services.data);
         setLoading(false);
         // console.log(data);
       }   
@@ -73,7 +73,7 @@ const AboutUs = () => {
             <div className='grid grid-3-columns' style={{columnGap: '2rem'}}>
 
             {isLoading && <ThreeLoadingScreens/>}
-            {data && data.data.map((service)=>{
+            {data && data.map((service)=>{
               console.log(service);
                 return(
                   <ServiceCard key={service.id} imgLink={service.attributes.coverUrl} Name={service.attributes.Name} Description={service.attributes.Description}/>
