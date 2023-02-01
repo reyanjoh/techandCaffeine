@@ -372,9 +372,6 @@ nav > .nav-div> a:hover{
   margin: 1rem 0;
 }
 
-.sections-headers-blue{
-  color: var(--font-color-main);
-}
 
 .sections-headers-sub-text{
   font-size: var(--font-medium);
@@ -430,14 +427,12 @@ nav > .nav-div> a:hover{
 
 .our-mission-content-paragraph{
   line-height: 1.5rem;
-  color: var(--font-color-dark);
 }
 
 .our-mission-list{
   position: relative;
   list-style: none;
   line-height: 1.8rem;
-  color: var(--font-color-dark);
 }
 
 .our-mission-list::before{
@@ -451,15 +446,9 @@ nav > .nav-div> a:hover{
   column-gap: var(--space-thin);
 }
 
-.what-we-offer-text{
-  color: var(--font-color-dark);
-  font-weight: 700;
-}
-
 .what-we-offer-service{
   column-gap: 1rem;
 }
-
 
 .form{
   /* width: 25%; */
