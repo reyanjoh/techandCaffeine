@@ -15,7 +15,7 @@ const FeaturedServices = () => {
 
       const getData = async() =>{
 
-        const res = await fetch('http://localhost:1337/api/home-page-featured-services/?populate=*')
+        const res = await fetch('https://techandcaffeineheadlesscms.onrender.com/api/home-page-featured-services/?populate=*')
         const data = await res.json()
 
         setData(data.data[0].attributes.services.data);
