@@ -11,11 +11,14 @@ const FeaturedServices = () => {
       // const data = fetchData('http://localhost:3500/data')
       // console.log(data);
 
+      // http://localhost:1337/api/home-page-featured-services/?populate=*
+
       const getData = async() =>{
-        const res = await fetch('https://techandcaffeineheadlesscms.onrender.com/api/services')
+
+        const res = await fetch('http://localhost:1337/api/home-page-featured-services/?populate=*')
         const data = await res.json()
 
-        setData(data);
+        setData(data.data[0].attributes.services.data);
         setLoading(false);
         // console.log(data);
       }   
@@ -32,8 +35,8 @@ const FeaturedServices = () => {
         <div className='grid grid-3-columns' style={{columnGap: '2rem'}}>
 
             {isLoading && <ThreeLoadingScreens/>}
-            {data && data.data.map((service)=>{
-              console.log(service);
+            {data && data.map((service)=>{
+              // console.log(service);
                 return(
                   <ServiceCard key={service.id} imgLink={service.attributes.coverUrl} Name={service.attributes.Name} Description={service.attributes.Description}/>
                 )
