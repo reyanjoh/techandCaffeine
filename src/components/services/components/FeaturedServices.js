@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ThreeLoadingScreens from '../../loadingScreen/ThreeLoadingScreens'
 import ServiceCard from '../../universalComponents/ServiceCard'
 
 const FeaturedServices = () => {
@@ -30,7 +31,7 @@ const FeaturedServices = () => {
 
         <div className='grid grid-3-columns' style={{columnGap: '2rem'}}>
 
-            {isLoading && <div>Loading. . .</div>}
+            {isLoading && <ThreeLoadingScreens/>}
             {data && data.data.map((service)=>{
               console.log(service);
                 return(
