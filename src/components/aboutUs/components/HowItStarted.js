@@ -5,7 +5,7 @@ const HowItStarted = () => {
     <div className='flex flex-column flex-align-center bg-color-dark'>
         
         <div className='flex'>
-            <img alt='' src='./assets/imgs/aboutUs-img.jpg' style={{width: '50vw'}}/>
+            <img className='hide-on-mobile' alt='' src='./assets/imgs/aboutUs-img.jpg' style={{width: '50vw'}}/>
 
             <div className='flex flex-column padding-2-4 flex-justify-center'>
                 <span className='sections-headers font-color-light'>how it started</span>

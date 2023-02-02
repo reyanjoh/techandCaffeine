@@ -19,7 +19,7 @@ const Contact = () => {
     <div>
         <PagesHero />
         <div className='side-top-bottom-padding flex flex-justify-center'>
-          <img alt='man' className='man-contacts' src='./assets/imgs/man-img.png'/>
+          <img alt='man' className='man-contacts hide-on-mobile' src='./assets/imgs/man-img.png'/>
           <ContactForm />
         </div>
         
