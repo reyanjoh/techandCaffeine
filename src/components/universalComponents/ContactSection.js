@@ -3,7 +3,7 @@ import { PagesForm } from './Forms'
 
 const ContactSection = () => {
   return (
-    <div className='side-top-bottom-padding flex'>
+    <div className='mobile-flex-column tablet-flex-column side-top-bottom-padding flex'>
       <div className='flex flex-column half-display-width padding-right'>
         <span className='contact-section-header'>Your Local Geeks Will email you back as soon as posible!</span>
         <span className='contact-section-sub-header'>We only give service in Malaybalay area for now</span>

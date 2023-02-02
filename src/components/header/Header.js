@@ -7,7 +7,7 @@ const Header = () => {
         
   return (
     <header className='flex-column'>
-        <div className='header-contact-info flex flex-align-center'>
+        <div className='hide-on-mobile header-contact-info flex flex-align-center'>
             <div className='header-contact-info-location flex flex-align-center'>
                 <i className="fa-solid fa-location-dot header-icon"></i>
                 <span className='header-contact-info-address'>Claro Corner, Magsaysay St, Malaybalay City, 8700 Bukidnon</span>
@@ -16,7 +16,9 @@ const Header = () => {
             <a href='tel:+(63)9761731273'>Call us for inquiry: +(63)9761731273</a>
         </div>
 
-        <nav className='flex'>
+        {/* <i className='hide-on-desktop fa-solid fa-bars'></i> */}
+
+        <nav className='flex mobile-flex-column'>
             <a href='/'><Logo /></a>
             <div className='nav-div'>
                 <NavLink to='/'>Home</NavLink>

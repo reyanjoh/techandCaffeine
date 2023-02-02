@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ThreeLoadingScreens from '../loadingScreen/ThreeLoadingScreens';
+import ThreeLoadingScreens from '../../util/loadingScreen/ThreeLoadingScreens';
 import ContactSection from '../universalComponents/ContactSection';
 import PagesHero from '../universalComponents/PagesHero'
 import ServiceCard from '../universalComponents/ServiceCard';
@@ -35,7 +35,7 @@ const AboutUs = () => {
         <PagesHero />
         <div className='flex side-top-bottom-padding bg-color-dark'>
             <div>
-                <img alt='' src='./assets/imgs/about/image-2.jpg'/>
+                <img className='hide-on-mobile' alt='' src='./assets/imgs/about/image-2.jpg'/>
             </div>
             <div className='sections-content-paddings'>
                 <h1 className='sections-headers font-color-light'>Our Mission</h1>

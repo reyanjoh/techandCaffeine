@@ -12,7 +12,7 @@ const Footer = () => {
             <a href='/contact#contact-form'><i className="footer-icon fa-solid fa-map-location-dot"></i></a>
             
         </div>
-        <div className='flex padding-0-6 font-color-light' style={{columnGap:'1rem', paddingBottom:'2rem'}}>
+        <div className='flex mobile-flex-column padding-0-6 font-color-light' style={{columnGap:'1rem', paddingBottom:'2rem'}}>
             <div  className='footer-card flex-column font-color-light'>
                 <span className='footer-header'>
                     <a href='/'><Logo /></a>

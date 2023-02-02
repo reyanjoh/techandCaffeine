@@ -4,13 +4,13 @@ const HomePageHero = () => {
   return (
     <>
         <div className='hero flex-align-center font-color-light'>
-            <div className='welcome-msg'>
+            <div className='welcome-msg mobile-2rem-padding'>
                 <span className='looking-for'>Looking for</span>
                 <h1 className='font-xxlarge'>Computer and Laptop Repair in Malaybalay ?</h1>
                 <h2 className='font-medium weight-500 bottom-m-3rem'>Our techies will diagnose your computer errors and troubleshoot it and restore your PC to its original state. Call us now to get instant tech support.</h2>
 
                 <a className='call-us-now' href='tel:+(63)9761731273'>Call us now!</a>
-                <img alt='man' className='man-img' src='./assets/imgs/man-img.png'/>
+                <img alt='man' className='man-img hide-on-mobile' src='./assets/imgs/man-img.png'/>
             </div>
         </div>
         <div className='promises font-color-light bg-color-yellow padding-2-6'>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ThreeLoadingScreens from '../../loadingScreen/ThreeLoadingScreens'
+import ThreeLoadingScreens from '../../../util/loadingScreen/ThreeLoadingScreens'
 import ServiceCard from '../../universalComponents/ServiceCard'
 
 const FeaturedServices = () => {
@@ -28,7 +28,7 @@ const FeaturedServices = () => {
     },[])
 
   return (
-    <div className='flex flex-column flex-align-center padding-2-6'>
+    <div className='featured-services-mobile flex flex-column flex-align-center padding-2-6'>
         <span className='sections-headers'>Computer Repair and data recovery Services</span>
         <span className='sections-headers-sub-text'></span>
 

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import ThreeLoadingScreens from '../../loadingScreen/ThreeLoadingScreens'
+import ThreeLoadingScreens from '../../../util/loadingScreen/ThreeLoadingScreens'
 import ServiceCard from '../../universalComponents/ServiceCard'
 
 const AllServices = () => {
